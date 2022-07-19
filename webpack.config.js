@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     intialLoad: './src/intialLoad.js',
+    home: './src/home.js',
   },
   devtool: 'inline-source-map',
   plugins: [
