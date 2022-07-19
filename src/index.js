@@ -4,17 +4,22 @@ import {
   tabCreator
 } from './intialLoad.js';
 import homePage from './home.js';
+import menuPage from './menu.js';
+import contactPage from './contact.js';
 
-document.body.appendChild(tabCreator());
-document.body.appendChild(intialComponent());
-const container = document.querySelector('.content');
+const container = document.createElement('div');
+container.classList.add("container");
+container.appendChild(tabCreator());
+container.appendChild(intialComponent());
+document.body.appendChild(container);
+const content = document.querySelector('.content');
 const home = document.querySelector('.home');
 const menu = document.querySelector('.menu');
 const contact = document.querySelector('.contact');
 
 function removeAllChildrenFromContainer() {
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
   }
 }
 
@@ -24,6 +29,8 @@ homePage();
 console.log(container);*/
 
 function homeClick(e) {
+  removeAllChildrenFromContainer();
+  homePage();
   home.style["transform"] = "scale(1.15)";
   menu.style["transform"] = "scale(1.0)";
   contact.style["transform"] = "scale(1.0)";
@@ -33,6 +40,8 @@ function homeClick(e) {
 }
 
 function menuClick(e) {
+  removeAllChildrenFromContainer();
+  menuPage();
   home.style["transform"] = "scale(1.0)";
   menu.style["transform"] = "scale(1.15)";
   contact.style["transform"] = "scale(1.0)";
@@ -42,6 +51,8 @@ function menuClick(e) {
 }
 
 function contactClick(e) {
+  removeAllChildrenFromContainer();
+  contactPage();
   home.style["transform"] = "scale(1.0)";
   menu.style["transform"] = "scale(1.0)";
   contact.style["transform"] = "scale(1.15)";

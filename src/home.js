@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import './styles.css';
 import Icon from './green.png';
 function homePage() {
   const element = document.querySelector('.content');
@@ -13,8 +12,8 @@ function homePage() {
   p1.textContent="Get ready to explore our best items we have to offer!";
 
 
-  element.appendChild(myIcon);
   element.appendChild(h1);
+  element.appendChild(myIcon);
   element.appendChild(p1);
   return element;
 }

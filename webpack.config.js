@@ -7,6 +7,8 @@ module.exports = {
     index: './src/index.js',
     intialLoad: './src/intialLoad.js',
     home: './src/home.js',
+    menu: './src/menu.js',
+    contact: './src/contact.js',
   },
   devtool: 'inline-source-map',
   plugins: [

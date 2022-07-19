@@ -13,8 +13,8 @@ function intialComponent() {
   p1.textContent="Get ready to explore our best items we have to offer!";
 
 
-  element.appendChild(myIcon);
   element.appendChild(h1);
+  element.appendChild(myIcon);
   element.appendChild(p1);
   return element;
 }

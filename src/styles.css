@@ -5,11 +5,16 @@ body {
     'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.content {
+h1 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .tab-wrapper {
@@ -33,4 +38,58 @@ body {
 .tab-wrapper>div:hover {
   cursor: pointer;
   background-color: #111111;
+}
+
+.content {
+  max-width: 700px;
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  padding: 8px;
+}
+
+.food-image {
+  width: 125px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.food-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.food-wrapper > div {
+  width: 100%;
+  margin-bottom: 8px;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom-width: normal;
+  border-style: solid;
+}
+
+.food-wrapper > div:last-child {
+  border: 0;
+  margin-bottom: 0px;
+}
+
+
+.food-wrapper > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.food-footer {
+  font-size: 12px;
+  gap: 0px;
 }
