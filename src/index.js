@@ -11,7 +11,9 @@ const container = document.createElement('div');
 container.classList.add("container");
 container.appendChild(tabCreator());
 container.appendChild(intialComponent());
+
 document.body.appendChild(container);
+
 const content = document.querySelector('.content');
 const home = document.querySelector('.home');
 const menu = document.querySelector('.menu');
@@ -22,11 +24,6 @@ function removeAllChildrenFromContainer() {
     content.removeChild(content.firstChild);
   }
 }
-
-/*removeAllChildrenFromContainer();
-
-homePage();
-console.log(container);*/
 
 function homeClick(e) {
   removeAllChildrenFromContainer();

@@ -65,7 +65,7 @@ h1 {
   width: 100%;
 }
 
-.food-wrapper > div {
+.food-wrapper>div {
   width: 100%;
   margin-bottom: 8px;
   border-right: 0px;
@@ -75,13 +75,12 @@ h1 {
   border-style: solid;
 }
 
-.food-wrapper > div:last-child {
+.food-wrapper>div:last-child {
   border: 0;
   margin-bottom: 0px;
 }
 
-
-.food-wrapper > div > div {
+.food-wrapper>div>div {
   display: flex;
   justify-content: center;
   align-items: center;

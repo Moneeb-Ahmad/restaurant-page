@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './styles.css';
 import Icon from './green.png';
+
 function intialComponent() {
   const element = document.createElement('div');
   element.classList.add("content")
@@ -9,8 +10,8 @@ function intialComponent() {
   const myIcon = new Image();
 
   myIcon.src = Icon;
-  h1.textContent="World's Greatest Restaurant";
-  p1.textContent="Get ready to explore our best items we have to offer!";
+  h1.textContent = "World's Greatest Restaurant";
+  p1.textContent = "Get ready to explore our best items we have to offer!";
 
 
   element.appendChild(h1);
@@ -30,9 +31,9 @@ function tabCreator() {
   contact.classList.add("contact");
 
 
-  home.textContent="Home";
-  menu.textContent="Menu";
-  contact.textContent="Contact";
+  home.textContent = "Home";
+  menu.textContent = "Menu";
+  contact.textContent = "Contact";
 
 
   tabWrapper.appendChild(home);
@@ -42,4 +43,7 @@ function tabCreator() {
   return tabWrapper;
 }
 
-export { intialComponent, tabCreator};
+export {
+  intialComponent,
+  tabCreator
+};

@@ -2,6 +2,7 @@ import _ from 'lodash';
 import salad from './anh-nguyen-kcA-c3f_3FE-unsplash.jpg';
 import pancake from './chad-montano-eeqbbemH9-c-unsplash.jpg';
 import pizza from './chad-montano-MqT0asuoIcU-unsplash.jpg';
+
 function menuPage() {
   const element = document.querySelector('.content');
   const foodWrapper = document.createElement('div');
@@ -52,19 +53,19 @@ function menuPage() {
   pizzaImage.classList.add("food-image");
 
   saladFooter.innerHTML =
-                        `Photo by
+    `Photo by
                         <a href="https://unsplash.com/@pwign?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Anh Nguyen</a> on
                         <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Unsplash</a>`;
   pancakeFooter.innerHTML =
-                          `Photo by
+    `Photo by
                           <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                           Chad Montano </a> on
                           <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                           Unsplash</a>`;
   pizzaFooter.innerHTML =
-                        `Photo by
+    `Photo by
                         <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                         Chad Montano </a> on
                         <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -78,4 +79,7 @@ function menuPage() {
   return element;
 }
 
-export { menuPage as  default};
+export {
+  menuPage as
+  default
+};
